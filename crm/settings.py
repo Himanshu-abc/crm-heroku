@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8b*$fsm6-m34ul1bd$y6mf8z)gx!bn2b#s5esj)38m5(6qdi)c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['crm-herokupush.herokuapp.com']
+ALLOWED_HOSTS = ['crm-push1.herokuapp.com']
 
 # Application definition
 
@@ -91,14 +91,13 @@ WSGI_APPLICATION = 'crm.wsgi.application'
 #         }
 # }
 
-
 DATABASES = {
         'default': {
                'ENGINE': 'django.db.backends.postgresql',
-               'NAME': 'd13331bst5hcrf',
-               'USER': 'gvubqaywazqulz',
-               'PASSWORD': '1e9d66bd005cc78e24a1ffcfd058a88442a84d258017f062758dcf82a238081e',
-               'HOST': 'ec2-52-3-130-181.compute-1.amazonaws.com',
+               'NAME': 'd50qn4hcddm7v1',
+               'USER': 'unewuphbqcqxaj',
+               'PASSWORD': '98be6215f95bfc4dff081670adda653f0da77c30f1ac74d3d9f4e778934daebc',
+               'HOST': 'ec2-35-174-56-18.compute-1.amazonaws.com',
                'PORT': '5432',
         }
 }
