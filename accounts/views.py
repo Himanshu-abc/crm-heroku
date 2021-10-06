@@ -102,7 +102,7 @@ def customers(request,pk):
     return render(request,'accounts/customers.html',context)
 
 @login_required(login_url='login')
-@allowed_users(allowed_roles=['admin'])
+@allowed_users(allowed_roles=['admin','customer'])
 def products(request):
     products = Product.objects.all()
 
